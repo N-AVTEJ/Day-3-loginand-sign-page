@@ -192,20 +192,6 @@ http://localhost:8000
 * **XSS Defense**: Untrusted user inputs (names, emails) are written strictly via `textContent` rather than `innerHTML`.
 * **Safe Storage**: Passwords and sensitive credentials are **never stored** in `localStorage` or `sessionStorage`.
 * **Explicit Prototype Notice**: All successful demo submissions and social sign-in clicks display clear notices that no backend server was contacted.
-
----
-
-## 🎬 45–60 Second YouTube Demonstration Script
-
-| Timestamp | Screen Action | What to Highlight |
-|---|---|---|
-| **0:00 – 0:08** | **Desktop Overview** | Showcase the split-screen layout: ambient radial gradient orbs, geometric NEXORA logo, product benefits, and glassmorphic testimonial card. |
-| **0:08 – 0:16** | **Tab View Switching** | Click *"Create Account"* on the pill switcher; watch the indicator slide to the Signup view. Click *"Already have an account? Log in"* to return. |
-| **0:16 – 0:26** | **Validation & Password Toggle** | Click *"Sign In"* with empty fields to show accessible crimson error states. Enter a password and click the eye button to toggle plaintext visibility. |
-| **0:26 – 0:38** | **Password Strength Meter** | In Signup, type `demo` (Weak/Red) → `Demo123` (Medium/Amber) → `Demo123!@#` (Strong/Green) while showing the 4 criteria checkmarks light up. |
-| **0:38 – 0:48** | **Forgot Password & Toasts** | Click *"Forgot password?"* to showcase the modal dialog with focus trapping and demo link simulation. Click Google/GitHub for toast feedback. |
-| **0:48 – 0:60** | **Mobile Responsiveness** | Resize to 375px in DevTools; demonstrate the compact brand header, full-width touch targets, zero horizontal scrolling, and final submission loading spinner. |
-
 ---
 
 ## 📄 License
