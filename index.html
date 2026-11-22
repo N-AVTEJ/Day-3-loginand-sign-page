@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Page Title & Meta Description -->
+  <title>NEXORA — Modern Workspace Platform</title>
+  <meta name="description" content="Access your Nexora workspace. The modern collaboration and project delivery platform for high-velocity engineering teams.">
+  <meta name="theme-color" content="#070b14">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NEXORA — Modern Workspace Platform">
+  <meta property="og:description" content="Access your Nexora workspace. The modern collaboration and project delivery platform for high-velocity engineering teams.">
+  <meta property="og:site_name" content="Nexora">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NEXORA — Modern Workspace Platform">
+  <meta name="twitter:description" content="Access your Nexora workspace. The modern collaboration and project delivery platform for high-velocity engineering teams.">
+
+  <!-- Favicon (Inline SVG Gradient Logo) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='34' y2='34' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%234F46E5'/%3E%3Cstop offset='0.5' stop-color='%236366F1'/%3E%3Cstop offset='1' stop-color='%2306B6D4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='34' height='34' rx='9' fill='url(%23g)'/%3E%3Cpath d='M10 24L17 10L24 24' stroke='white' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3Cpath d='M12.5 19.5H21.5' stroke='white' stroke-width='2.6' stroke-linecap='round' fill='none'/%3E%3Ccircle cx='17' cy='10' r='2.2' fill='%2338BDF8'/%3E%3C/svg%3E">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="auth-wrapper" id="authWrapper" data-active-view="login">
+    
+    <!-- ==========================================
+         LEFT SECTION: BRAND EXPERIENCE
+         ========================================== -->
+    <section class="brand-panel" aria-label="Brand Overview">
+      <!-- Decorative Ambient Gradient Glows -->
+      <div class="ambient-glow ambient-glow-1" aria-hidden="true"></div>
+      <div class="ambient-glow ambient-glow-2" aria-hidden="true"></div>
+      <div class="ambient-glow ambient-glow-3" aria-hidden="true"></div>
+      <div class="mesh-grid-pattern" aria-hidden="true"></div>
+
+      <div class="brand-inner-container">
+        <!-- Brand Header / Logo -->
+        <header class="brand-header">
+          <a href="#" class="brand-logo" aria-label="Nexora Home">
+            <span class="logo-mark" aria-hidden="true">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="34" height="34" rx="9" fill="url(#logo-grad-bg)" />
+                <path d="M10 24L17 10L24 24" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12.5 19.5H21.5" stroke="white" stroke-width="2.6" stroke-linecap="round"/>
+                <circle cx="17" cy="10" r="2.2" fill="#38BDF8"/>
+                <defs>
+                  <linearGradient id="logo-grad-bg" x1="0" y1="0" x2="34" y2="34" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#4F46E5"/>
+                    <stop offset="0.5" stop-color="#6366F1"/>
+                    <stop offset="1" stop-color="#06B6D4"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </span>
+            <span class="brand-name">NEXORA</span>
+          </a>
+          <div class="brand-badge">
+            <span class="badge-dot" aria-hidden="true"></span>
+            <span>v2.5 Enterprise</span>
+          </div>
+        </header>
+
+        <!-- Brand Main Hero Copy -->
+        <div class="brand-hero">
+          <div class="announcement-pill">
+            <svg class="pill-sparkle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/>
+            </svg>
+            <span>Next-Gen Autonomous Workflow Engine</span>
+          </div>
+
+          <h1 class="brand-headline">
+            Welcome back to your <span class="gradient-text">workspace.</span>
+          </h1>
+
+          <p class="brand-description">
+            The unified collaboration suite designed for high-velocity software teams to orchestrate sprints, ship features, and maintain full velocity.
+          </p>
+
+          <!-- 3 Key Benefits -->
+          <ul class="benefits-list" aria-label="Key Product Benefits">
+            <li class="benefit-item">
+              <div class="benefit-icon-wrapper" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                  <rect width="20" height="16" x="2" y="4" rx="2"/>
+                  <path d="m9 10 2 2 4-4"/>
+                </svg>
+              </div>
+              <div class="benefit-content">
+                <strong class="benefit-title">Manage your work effortlessly.</strong>
+                <span class="benefit-subtitle">Automate backlogs, sprint cycles, and cross-team dependencies in one frictionless canvas.</span>
+              </div>
+            </li>
+
+            <li class="benefit-item">
+              <div class="benefit-icon-wrapper" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <div class="benefit-content">
+                <strong class="benefit-title">Collaborate with your team.</strong>
+                <span class="benefit-subtitle">Live multiplayer editing, contextual discussion threads, and instant code context sync.</span>
+              </div>
+            </li>
+
+            <li class="benefit-item">
+              <div class="benefit-icon-wrapper" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
+                  <polyline points="16 7 22 7 22 13"/>
+                </svg>
+              </div>
+              <div class="benefit-content">
+                <strong class="benefit-title">Track progress in real time.</strong>
+                <span class="benefit-subtitle">Continuous burndown metrics, cycle time analytics, and automated milestone updates.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Fictional Customer Testimonial -->
+        <div class="brand-testimonial-card">
+          <div class="testimonial-stars" aria-label="Rated 5 out of 5 stars">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#FBBF24" stroke="#FBBF24" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#FBBF24" stroke="#FBBF24" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#FBBF24" stroke="#FBBF24" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#FBBF24" stroke="#FBBF24" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#FBBF24" stroke="#FBBF24" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <blockquote class="testimonial-quote">
+            “Nexora eliminated our sprint overhead and replaced three disconnected tools. Our engineering velocity increased by 42% in our very first release cycle.”
+          </blockquote>
+          <footer class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">
+              <span>EJ</span>
+            </div>
+            <div class="author-details">
+              <cite class="author-name">Elena Rostova</cite>
+              <span class="author-role">VP of Product & Engineering at CloudScale</span>
+            </div>
+            <div class="verified-badge" title="Verified Customer">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#38BDF8" aria-hidden="true">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+            </div>
+          </footer>
+        </div>
+
+        <!-- Brand Footer Note -->
+        <footer class="brand-footer">
+          <p class="brand-footer-text">
+            <span>Trusted by 45,000+ teams worldwide</span>
+          </p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         RIGHT SECTION: AUTHENTICATION PANEL
+         ========================================== -->
+    <main class="auth-panel" aria-label="Account Authentication">
+      
+      <!-- Mobile Only Top Brand Banner -->
+      <header class="mobile-brand-banner">
+        <div class="mobile-logo-group">
+          <svg width="28" height="28" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="34" height="34" rx="9" fill="url(#mobile-logo-grad)" />
+            <path d="M10 24L17 10L24 24" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12.5 19.5H21.5" stroke="white" stroke-width="2.6" stroke-linecap="round"/>
+            <circle cx="17" cy="10" r="2.2" fill="#38BDF8"/>
+            <defs>
+              <linearGradient id="mobile-logo-grad" x1="0" y1="0" x2="34" y2="34" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#4F46E5"/>
+                <stop offset="0.5" stop-color="#6366F1"/>
+                <stop offset="1" stop-color="#06B6D4"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="mobile-brand-title">NEXORA</span>
+        </div>
+        <span class="mobile-brand-tag">Workspaces</span>
+      </header>
+
+      <!-- View Switcher Tabs (Accessible Pill Switcher) -->
+      <nav class="auth-tab-nav" aria-label="Authentication View Switcher">
+        <div class="tab-indicator" id="tabIndicator" aria-hidden="true"></div>
+        <button type="button" class="tab-btn active" id="tabLoginBtn" role="tab" aria-selected="true" aria-controls="loginViewSection">
+          Sign In
+        </button>
+        <button type="button" class="tab-btn" id="tabSignupBtn" role="tab" aria-selected="false" aria-controls="signupViewSection">
+          Create Account
+        </button>
+      </nav>
+
+      <!-- Auth Container Box -->
+      <div class="auth-card-container">
+
+        <!-- ==========================================
+             VIEW 1: LOGIN FORM
+             ========================================== -->
+        <section class="auth-view-content" id="loginViewSection" role="tabpanel" aria-labelledby="tabLoginBtn">
+          <div class="auth-form-header">
+            <h2 class="auth-title">Sign in to your account</h2>
+            <p class="auth-subtitle">Welcome back. Enter your credentials to access your workspace.</p>
+          </div>
+
+          <!-- Social Authentication -->
+          <div class="social-auth-grid">
+            <button type="button" class="btn-social" aria-label="Sign in with Google">
+              <svg class="social-icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+              </svg>
+              <span>Continue with Google</span>
+            </button>
+
+            <button type="button" class="btn-social" aria-label="Sign in with GitHub">
+              <svg class="social-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+              <span>Continue with GitHub</span>
+            </button>
+          </div>
+
+          <!-- Divider -->
+          <div class="auth-divider">
+            <span class="divider-line" aria-hidden="true"></span>
+            <span class="divider-text">OR CONTINUE WITH EMAIL</span>
+            <span class="divider-line" aria-hidden="true"></span>
+          </div>
+
+          <!-- Login Feedback / Status Banner -->
+          <div class="auth-feedback-banner" id="loginFeedback" role="status" aria-live="polite" hidden></div>
+
+          <!-- Login Form Elements -->
+          <form class="auth-form" id="loginForm" novalidate>
+            <!-- Email Input -->
+            <div class="form-group">
+              <label for="loginEmail" class="form-label">Work Email</label>
+              <div class="input-wrapper">
+                <span class="input-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="16" x="2" y="4" rx="2"/>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                  </svg>
+                </span>
+                <input 
+                  type="email" 
+                  id="loginEmail" 
+                  name="email" 
+                  class="form-input" 
+                  placeholder="name@company.com" 
+                  autocomplete="email" 
+                  required
+                >
+              </div>
+              <span class="field-error-message" id="loginEmailError" aria-live="polite"></span>
+            </div>
+
+            <!-- Password Input -->
+            <div class="form-group">
+              <div class="form-label-row">
+                <label for="loginPassword" class="form-label">Password</label>
+                <a href="#forgot" class="forgot-link" id="forgotPasswordLink">Forgot password?</a>
+              </div>
+              <div class="input-wrapper">
+                <span class="input-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                  </svg>
+                </span>
+                <input 
+                  type="password" 
+                  id="loginPassword" 
+                  name="password" 
+                  class="form-input has-toggle" 
+                  placeholder="Enter your password" 
+                  autocomplete="current-password" 
+                  required
+                >
+                <button 
+                  type="button" 
+                  class="btn-toggle-password" 
+                  aria-label="Toggle password visibility" 
+                  data-target="loginPassword"
+                >
+                  <!-- Eye Open Icon -->
+                  <svg class="eye-icon eye-open" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
+                    <circle cx="12" cy="12" r="3"/>
+                  </svg>
+                  <!-- Eye Off Icon (Hidden by default) -->
+                  <svg class="eye-icon eye-closed" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/>
+                    <path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"/>
+                    <path d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/>
+                    <line x1="2" x2="22" y1="2" y2="22"/>
+                  </svg>
+                </button>
+              </div>
+              <span class="field-error-message" id="loginPasswordError" aria-live="polite"></span>
+            </div>
+
+            <!-- Remember Me Row -->
+            <div class="form-options-row">
+              <label class="custom-checkbox-label" for="loginRemember">
+                <input type="checkbox" id="loginRemember" name="remember" class="custom-checkbox-input">
+                <span class="custom-checkbox-box" aria-hidden="true">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </span>
+                <span class="checkbox-text">Remember this device for 30 days</span>
+              </label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn-primary" id="loginSubmitBtn">
+              <span class="btn-text">Sign In to Workspace</span>
+              <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </form>
+
+          <!-- Footer Switch Link -->
+          <footer class="auth-view-footer">
+            <p class="switch-view-text">
+              Don’t have an account yet? 
+              <button type="button" class="inline-switch-btn" id="switchToSignupBtn">Create an account</button>
+            </p>
+          </footer>
+        </section>
+
+
+        <!-- ==========================================
+             VIEW 2: SIGNUP FORM
+             ========================================== -->
+        <section class="auth-view-content" id="signupViewSection" role="tabpanel" aria-labelledby="tabSignupBtn" hidden>
+          <div class="auth-form-header">
+            <h2 class="auth-title">Create your workspace account</h2>
+            <p class="auth-subtitle">Start your 14-day full feature trial. No credit card required.</p>
+          </div>
+
+          <!-- Social Signup -->
+          <div class="social-auth-grid">
+            <button type="button" class="btn-social" aria-label="Sign up with Google">
+              <svg class="social-icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+              </svg>
+              <span>Sign up with Google</span>
+            </button>
+
+            <button type="button" class="btn-social" aria-label="Sign up with GitHub">
+              <svg class="social-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+              <span>Sign up with GitHub</span>
+            </button>
+          </div>
+
+          <!-- Divider -->
+          <div class="auth-divider">
+            <span class="divider-line" aria-hidden="true"></span>
+            <span class="divider-text">OR REGISTER WITH EMAIL</span>
+            <span class="divider-line" aria-hidden="true"></span>
+          </div>
+
+          <!-- Signup Feedback / Status Banner -->
+          <div class="auth-feedback-banner" id="signupFeedback" role="status" aria-live="polite" hidden></div>
+
+          <!-- Signup Form Elements -->
+          <form class="auth-form" id="signupForm" novalidate>
+            <!-- Full Name Input -->
+            <div class="form-group">
+              <label for="signupName" class="form-label">Full Name</label>
+              <div class="input-wrapper">
+                <span class="input-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+                    <circle cx="12" cy="7" r="4"/>
+                  </svg>
+                </span>
+                <input 
+                  type="text" 
+                  id="signupName" 
+                  name="fullname" 
+                  class="form-input" 
+                  placeholder="Alex Rivera" 
+                  autocomplete="name" 
+                  required
+                >
+              </div>
+              <span class="field-error-message" id="signupNameError" aria-live="polite"></span>
+            </div>
+
+            <!-- Email Input -->
+            <div class="form-group">
+              <label for="signupEmail" class="form-label">Work Email</label>
+              <div class="input-wrapper">
+                <span class="input-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="16" x="2" y="4" rx="2"/>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                  </svg>
+                </span>
+                <input 
+                  type="email" 
+                  id="signupEmail" 
+                  name="email" 
+                  class="form-input" 
+                  placeholder="alex@company.com" 
+                  autocomplete="email" 
+                  required
+                >
+              </div>
+              <span class="field-error-message" id="signupEmailError" aria-live="polite"></span>
+            </div>
+
+            <!-- Password Input -->
+            <div class="form-group">
+              <label for="signupPassword" class="form-label">Password</label>
+              <div class="input-wrapper">
+                <span class="input-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                  </svg>
+                </span>
+                <input 
+                  type="password" 
+                  id="signupPassword" 
+                  name="password" 
+                  class="form-input has-toggle" 
+                  placeholder="Minimum 8 characters" 
+                  autocomplete="new-password" 
+                  required
+                >
+                <button 
+                  type="button" 
+                  class="btn-toggle-password" 
+                  aria-label="Toggle password visibility" 
+                  data-target="signupPassword"
+                >
+                  <svg class="eye-icon eye-open" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
+                    <circle cx="12" cy="12" r="3"/>
+                  </svg>
+                  <svg class="eye-icon eye-closed" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/>
+                    <path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"/>
+                    <path d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/>
+                    <line x1="2" x2="22" y1="2" y2="22"/>
+                  </svg>
+                </button>
+              </div>
+              <span class="field-error-message" id="signupPasswordError" aria-live="polite"></span>
+            </div>
+
+            <!-- Password Strength Indicator -->
+            <div class="password-strength-container" id="passwordStrengthContainer" aria-live="polite">
+              <div class="strength-meter-header">
+                <span class="strength-label-title">Password Strength:</span>
+                <span class="strength-score-text" id="strengthScoreText">Enter password</span>
+              </div>
+              <div class="strength-bar-track" aria-hidden="true">
+                <div class="strength-bar-segment" id="strengthBar1"></div>
+                <div class="strength-bar-segment" id="strengthBar2"></div>
+                <div class="strength-bar-segment" id="strengthBar3"></div>
+              </div>
+              <ul class="strength-criteria-list" aria-label="Password Requirements">
+                <li class="criteria-item" id="critLength">
+                  <span class="criteria-check" aria-hidden="true">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </span>
+                  <span>At least 8 characters</span>
+                </li>
+                <li class="criteria-item" id="critCase">
+                  <span class="criteria-check" aria-hidden="true">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </span>
+                  <span>Uppercase & lowercase</span>
+                </li>
+                <li class="criteria-item" id="critNumber">
+                  <span class="criteria-check" aria-hidden="true">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </span>
+                  <span>Number (0-9)</span>
+                </li>
+                <li class="criteria-item" id="critSpecial">
+                  <span class="criteria-check" aria-hidden="true">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </span>
+                  <span>Special symbol (!@#$%^&*)</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Confirm Password Input -->
+            <div class="form-group">
+              <label for="signupConfirmPassword" class="form-label">Confirm Password</label>
+              <div class="input-wrapper">
+                <span class="input-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    <path d="m9 12 2 2 4-4"/>
+                  </svg>
+                </span>
+                <input 
+                  type="password" 
+                  id="signupConfirmPassword" 
+                  name="confirmPassword" 
+                  class="form-input has-toggle" 
+                  placeholder="Re-enter your password" 
+                  autocomplete="new-password" 
+                  required
+                >
+                <button 
+                  type="button" 
+                  class="btn-toggle-password" 
+                  aria-label="Toggle password visibility" 
+                  data-target="signupConfirmPassword"
+                >
+                  <svg class="eye-icon eye-open" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
+                    <circle cx="12" cy="12" r="3"/>
+                  </svg>
+                  <svg class="eye-icon eye-closed" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/>
+                    <path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"/>
+                    <path d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/>
+                    <line x1="2" x2="22" y1="2" y2="22"/>
+                  </svg>
+                </button>
+              </div>
+              <span class="field-error-message" id="signupConfirmPasswordError" aria-live="polite"></span>
+            </div>
+
+            <!-- Terms and Conditions Checkbox -->
+            <div class="form-options-row">
+              <label class="custom-checkbox-label" for="signupTerms">
+                <input type="checkbox" id="signupTerms" name="terms" class="custom-checkbox-input" required>
+                <span class="custom-checkbox-box" aria-hidden="true">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </span>
+                <span class="checkbox-text terms-text">
+                  I agree to Nexora's <a href="#terms" class="auth-legal-link">Terms of Service</a> and <a href="#privacy" class="auth-legal-link">Privacy Policy</a>.
+                </span>
+              </label>
+              <span class="field-error-message" id="signupTermsError" aria-live="polite"></span>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn-primary" id="signupSubmitBtn">
+              <span class="btn-text">Create Free Account</span>
+              <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </form>
+
+          <!-- Footer Switch Link -->
+          <footer class="auth-view-footer">
+            <p class="switch-view-text">
+              Already have a Nexora workspace? 
+              <button type="button" class="inline-switch-btn" id="switchToLoginBtn">Log in</button>
+            </p>
+          </footer>
+        </section>
+
+      </div>
+
+      <!-- Trust & Compliance Micro-Footer -->
+      <footer class="auth-trust-footer">
+        <div class="trust-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+          </svg>
+          <span>End-to-End Encrypted</span>
+        </div>
+        <span class="trust-separator">•</span>
+        <div class="trust-badge">
+          <span>SOC 2 Type II Certified</span>
+        </div>
+        <span class="trust-separator">•</span>
+        <div class="trust-badge">
+          <span>99.99% SLA</span>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <!-- ==========================================
+       FORGOT PASSWORD MODAL (CLIENT-SIDE DEMO)
+       ========================================== -->
+  <div class="modal-backdrop" id="forgotModalBackdrop" role="dialog" aria-modal="true" aria-labelledby="forgotModalTitle" aria-describedby="forgotModalDesc" hidden>
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" id="closeForgotModalBtn" aria-label="Close password reset modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-header">
+        <div class="modal-icon-badge" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+          </svg>
+        </div>
+        <h3 class="modal-title" id="forgotModalTitle">Reset your password</h3>
+        <p class="modal-description" id="forgotModalDesc">
+          Enter your registered work email and we'll simulate dispatching a credential reset link.
+        </p>
+      </div>
+
+      <!-- Modal Status / Feedback Message -->
+      <div class="auth-feedback-banner" id="forgotFeedback" role="status" aria-live="polite" hidden></div>
+
+      <form class="modal-form" id="forgotForm" novalidate>
+        <div class="form-group">
+          <label for="forgotEmail" class="form-label">Work Email</label>
+          <div class="input-wrapper">
+            <span class="input-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2"/>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              </svg>
+            </span>
+            <input 
+              type="email" 
+              id="forgotEmail" 
+              name="email" 
+              class="form-input" 
+              placeholder="name@company.com" 
+              autocomplete="email" 
+              required
+            >
+          </div>
+          <span class="field-error-message" id="forgotEmailError" aria-live="polite"></span>
+        </div>
+
+        <p class="modal-demo-notice">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          </svg>
+          <span>Frontend Demo: Password recovery is simulated. No real email is dispatched without a backend.</span>
+        </p>
+
+        <div class="modal-actions-row">
+          <button type="button" class="btn-modal-cancel" id="cancelForgotBtn">Cancel</button>
+          <button type="submit" class="btn-primary modal-submit-btn" id="forgotSubmitBtn">
+            <span class="btn-text">Send Reset Link</span>
+            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       TOAST NOTIFICATIONS (DEMO MESSAGES)
+       ========================================== -->
+  <div class="toast-container" id="toastContainer" role="region" aria-label="Notifications" aria-live="polite"></div>
+
+  <!-- Vanilla JavaScript for View Switching & Interactive Visual Controls -->
+  <script src="script.js"></script>
+</body>
+</html>
